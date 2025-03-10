@@ -15,7 +15,7 @@ def get_sigilli():
         "Content-Type": "application/json"
     }
     
-    response = requests.get(f"{SUPABASE_URL}Sigilli", headers=headers)
+    response = requests.get(f"{SUPABASE_URL}sigilli", headers=headers)
     
     if response.status_code == 200:
         return jsonify(response.json())
